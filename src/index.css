@@ -11,14 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.App{max-width: 1170px; margin: auto; }
+.App{max-width: 1170px; margin: auto; padding: 20px;}
 .card{border-radius: 10px; box-shadow: 0 4px 14px rgba(0,0,0,0.1);}
 .input-card{background-color:rgb(41 135 143 / 80%);padding: 20px;}
 .form-input{display: flex; flex-direction: column; gap: 20px;}
-.input-card label{color: #f4f4f4;font-size: 30px; font-weight: 500;text-align: center;}
-.form-input .update-list-typing{font-size: 25px; font-weight: 600; text-align: center;color: blueviolet;}
+.input-card label{color: #f4f4f4;font-size: 25px;font-weight: 500;}
+.form-input .update-list-typing{font-size: 20px; font-weight: 700; text-align: center;color: rgb(231, 192, 84);text-transform: uppercase;}
 .form-input input{padding: 5px;color: black;background-color: transparent;border: 2px solid black;}
-.add-btn{padding: 5px; width: 100px; font-size: 20px; font-weight: 500;border:0;text-transform: uppercase; background-color: rgb(231, 166, 13); border-radius: 5px; color: aliceblue;}
+.add-btn{padding: 5px; width: 100px; font-size: 20px;cursor:pointer; font-weight: 500;border:0;text-transform: uppercase; background-color: rgb(231, 166, 13); border-radius: 5px; color: aliceblue;}
 
 .list-card{background-color: rgba(106, 50, 204, 0.9);padding:20px;margin-bottom: 20px;}
 .list-div{display: flex; flex-direction: column; justify-content: space-between;}
@@ -27,5 +27,17 @@ code {
 .form-input.invalid label{color: #c33434;}
 .form-input.invalid input{background-color: rgba(251, 204, 204, 0.8); border-color: #c33434;}
 
+.input-text .updating-text{display: flex; gap: 30px;margin-top: 10px;}
+.input-number .updating-num{display: flex; gap: 30px;margin-top: 10px;}
+.buttons{display: flex; align-items: center; justify-content: space-between;}
 
+/* error message popup ======================================= */
 
+.overlay{position: fixed; top: 0; left: 0; bottom: 0; right: 0; z-index: 5; background-color: rgba(0,0,0,0.5); width:100%; height: 100vh;}
+.error-popup{background-color: #f8bebe;display: flex; justify-content: space-between;position: fixed;margin: auto; top: 0; left: 0; bottom: 0; right: 0; z-index: 6; flex-direction: column; border-radius: 5px; border: 2px solid red; width: 400px; height: 300px;}
+.error-popup header {padding: 20px; text-align: center; height: 60px; font-size: 30px; font-weight: 700; color:#c33434; background-color: #0e0e0e; }
+.error-popup .message{font-size: 20px;padding: 20px; font-weight: 500; color: #0e0e0e;}
+.error-popup footer{padding: 20px; text-align: end; }
+.error-popup footer button{padding: 10px; font-size: 25px;font-weight: 700; border-radius: 5px; color: #f4f4f4;border: none; cursor:pointer; background-color:rgb(231, 166, 13); ;}
+.unordered-lists li{list-style: none;margin-bottom: 20px; color: #f4f4f4;font-size: 25px; font-weight: 600; border: 1px solid rgba(244, 244, 244,0.7) ; padding: 10px;}
+.unordered-lists{padding: 0;}
